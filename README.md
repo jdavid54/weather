@@ -7,3 +7,4 @@ I have added a automatic reload page each minute.
 You need to change the coordinates to fit yours in app.js.
 
 
+![IMG1](img01.jpg "img01")
