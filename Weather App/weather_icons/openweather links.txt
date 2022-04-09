@@ -1,0 +1,140 @@
+Current weather  : Paris
+https://openweathermap.org/city/2988507
+
+Api_keys (https://home.openweathermap.org/api_keys)
+default : c9d926a9549ae7933324ef26e13bb200
+home : 56040ff66d50184c81a4df3a770657e3
+
+
+==================================================================================================
+Paris
+==================================================================================================
+https://api.openweathermap.org/data/2.5/weather?id=2988507&units=metric&appid=c9d926a9549ae7933324ef26e13bb200
+Result :
+{"coord":{"lon":2.35,"lat":48.85},"weather":[{"id":804,"main":"Clouds","description":"overcast clouds","icon":"04d"}],"base":"stations","main":{"temp":283.5,"feels_like":281.6,"temp_min":282.15,"temp_max":285.15,"pressure":1028,"humidity":76},"visibility":10000,"wind":{"speed":1.5,"deg":0},"clouds":{"all":90},"dt":1606059573,"sys":{"type":1,"id":6550,"country":"FR","sunrise":1606029051,"sunset":1606060990},"timezone":3600,"id":2988507,"name":"Paris","cod":200}
+
+Pretty print json, no sorting
+{
+    "coord": {
+        "lon": 2.35,
+        "lat": 48.85
+    },
+    "weather": [
+        {
+            "id": 804,
+            "main": "Clouds",
+            "description": "overcast clouds",
+            "icon": "04n"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 282.51,
+        "feels_like": 280.6,
+        "temp_min": 281.15,
+        "temp_max": 284.15,
+        "pressure": 1028,
+        "humidity": 81
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 1.5,
+        "deg": 0
+    },
+    "clouds": {
+        "all": 90
+    },
+    "dt": 1606063980,
+    "sys": {
+        "type": 1,
+        "id": 6550,
+        "country": "FR",
+        "sunrise": 1606029051,
+        "sunset": 1606060990
+    },
+    "timezone": 3600,
+    "id": 2988507,
+    "name": "Paris",
+    "cod": 200
+}
+
+mode HTML
+https://api.openweathermap.org/data/2.5/weather?id=2988507&units=metric&mode=html&appid=56040ff66d50184c81a4df3a770657e3
+
+
+https://api.openweathermap.org/data/2.5/find?lat=48.85&lon=2.35&cnt=1&appid=56040ff66d50184c81a4df3a770657e3
+
+result : 
+{"message":"accurate","cod":"200","count":1,"list":[{"id":2988507,"name":"Paris","coord":{"lat":48.85,"lon":2.35},"main":{"temp":281.72,"feels_like":280,"temp_min":280.37,"temp_max":283.15,"pressure":1028,"humidity":81},"dt":1606068530,"wind":{"speed":1,"deg":240},"sys":{"country":"FR"},"rain":null,"snow":null,"clouds":{"all":0},"weather":[{"id":800,"main":"Clear","description":"clear sky","icon":"01n"}]}]}
+==================================================================================================
+Moscou
+==================================================================================================
+
+https://api.openweathermap.org/data/2.5/weather?id=524901&units=metric&appid=c9d926a9549ae7933324ef26e13bb200
+Result :
+{"coord":{"lon":37.62,"lat":55.75},"weather":[{"id":501,"main":"Rain","description":"moderate rain","icon":"10n"},{"id":620,"main":"Snow","description":"light shower snow","icon":"13n"}],"base":"stations","main":{"temp":270.79,"feels_like":264.85,"temp_min":270.37,"temp_max":271.15,"pressure":1016,"humidity":92},"visibility":2400,"wind":{"speed":5,"deg":200},"rain":{"1h":1.12},"snow":{"1h":1.1222},"clouds":{"all":75},"dt":1606059335,"sys":{"type":1,"id":9029,"country":"RU","sunrise":1606022362,"sunset":1606050746},"timezone":10800,"id":524901,"name":"Moscow","cod":200}
+
+Pretty print json, no sorting
+{
+    "coord": {
+        "lon": 37.62,
+        "lat": 55.75
+    },
+    "weather": [
+        {
+            "id": 803,
+            "main": "Clouds",
+            "description": "broken clouds",
+            "icon": "04n"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 270.8,
+        "feels_like": 264.86,
+        "temp_min": 270.37,
+        "temp_max": 271.15,
+        "pressure": 1015,
+        "humidity": 92
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 5,
+        "deg": 200
+    },
+    "clouds": {
+        "all": 75
+    },
+    "dt": 1606064068,
+    "sys": {
+        "type": 1,
+        "id": 9029,
+        "country": "RU",
+        "sunrise": 1606022362,
+        "sunset": 1606050746
+    },
+    "timezone": 10800,
+    "id": 524901,
+    "name": "Moscow",
+    "cod": 200
+}
+
+==================================================================================================
+Saigon
+==================================================================================================
+https://openweathermap.org/city/1580578     ou     1566083
+
+https://api.openweathermap.org/data/2.5/weather?id=1580578&lang=fr&units=metric&mode=html&appid=56040ff66d50184c81a4df3a770657e3
+
+==================================================================================================
+Group of ids (Paris, Saigon, Moscou) with group?
+==================================================================================================
+https://api.openweathermap.org/data/2.5/group?id=2988507,1580578,524901&appid=56040ff66d50184c81a4df3a770657e3
+
+result:
+{"cnt":3,"list":[{"coord":{"lon":2.35,"lat":48.85},"sys":{"country":"FR","timezone":3600,"sunrise":1606029051,"sunset":1606060990},"weather":[{"id":800,"main":"Clear","description":"clear sky","icon":"01n"}],"main":{"temp":281.72,"feels_like":280,"temp_min":280.37,"temp_max":283.15,"pressure":1028,"humidity":81},"visibility":10000,"wind":{"speed":1,"deg":240},"clouds":{"all":0},"dt":1606068530,"id":2988507,"name":"Paris"},{"coord":{"lon":106.67,"lat":10.83},"sys":{"country":"VN","timezone":25200,"sunrise":1606085556,"sunset":1606127235},"weather":[{"id":802,"main":"Clouds","description":"scattered clouds","icon":"03n"}],"main":{"temp":299.15,"feels_like":304.85,"temp_min":299.15,"temp_max":299.15,"pressure":1010,"humidity":94},"visibility":10000,"wind":{"speed":1,"deg":270},"clouds":{"all":40},"dt":1606068379,"id":1580578,"name":"Ho Chi Minh City"},{"coord":{"lon":37.62,"lat":55.75},"sys":{"country":"RU","timezone":10800,"sunrise":1606022362,"sunset":1606050746},"weather":[{"id":803,"main":"Clouds","description":"broken clouds","icon":"04n"}],"main":{"temp":271,"feels_like":264.98,"temp_min":270.93,"temp_max":271.15,"pressure":1015,"humidity":86},"visibility":10000,"wind":{"speed":5,"deg":200},"clouds":{"all":75},"dt":1606068420,"id":524901,"name":"Moscow"}]}
+
+==================================================================================================
+Bulk list
+==================================================================================================
+https://bulk.openweathermap.org/sample/
